@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Fourth task</title>
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/main.css" />
+		<link rel="stylesheet" href="../styles/fourth_task.css" />
+	</head>
+	<body class="dark_color light_background_color">
+		<div data-body="container">
+			<form action="fourth_task.php" method="POST" id="left-form"></form>
+			<fieldset form="left-form">
+				<legend align="left">Add your phone number</legend>
+				<div data-fieldset="left-form">
+					<div data-left-form="header">Option 1. Add your phone number</div>
+					<div data-left-form="blank-1"></div>
+					<label data-left-form="label_phone_number" for="left_form_phone_number">Enter your PHONE:</label>
+					<input data-left-form="input_phone_number" id="left_form_phone_number" />
+					<div data-left-form="blank-2"></div>
+					<label data-left-form="label_e_mail" for="e_mail">Enter your e-mail *:</label>
+					<input data-left-form="input_e_mail" id="e_mail" />
+					<div data-left-form="blank-3"></div>
+					<div data-left-form="clarification">You will be able to retrieve your phone number later on using your e-mail.</div>
+					<div data-left-form="blank-4"></div>
+					<input data-left-form="submit" type="submit" value="Submit" />
+				</div>
+			</fieldset>
+			<form action="fourth_task.php" method="POST" id="right-form"></form>
+			<fieldset form="right-form">
+				<legend align="left">Retrieve your phone number</legend>
+				<div data-fieldset="right-form">
+					<div data-right-form="header">Option 2. Retrieve your phone number</div>
+					<div data-right-form="blank-1"></div>
+					<label data-right-form="label_e_mail" for="right_form_e_mail">Enter your e-mail *:</label>
+					<input data-right-form="input_e_mail" id="right_form_e_mail" />
+					<div data-right-form="blank-2"></div>
+					<div data-right-form="clarification">The phone number will be e-mailed to you.</div>
+					<div data-right-form="blank-3"></div>
+					<input data-right-form="submit" type="submit" value="Submit" />
+				</div>
+			</fieldset>
+		</div>
+	</body>
+</html>

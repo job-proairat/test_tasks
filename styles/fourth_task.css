@@ -1,0 +1,175 @@
+
+[data-body="container"] {
+
+	display: flex;
+}
+
+fieldset[form="left-form"], fieldset[form="right-form"] {
+	width: 320px;
+	font-size: 14px;
+	border: 1px solid #a2a2a2;
+	border-radius: 5px;
+	margin: 0;
+}
+
+fieldset[form="left-form"] {
+
+	margin-right: 20px;
+}
+
+fieldset > legend {
+
+	color: #0a85d7;
+	font-weight: 700;
+}
+
+/* left-form start */
+
+[data-fieldset="left-form"] {
+
+	display: grid;
+	grid-template-areas: "header"
+						 "blank-1" 
+						 "label_phone_number" 
+						 "input_phone_number" 
+						 "blank-2" 
+						 "label_e_mail" 
+						 "input_e_mail" 
+						 "blank-3" 
+						 "clarification" 
+						 "blank-4" 
+						 "submit";
+	grid-template-rows: 1fr 25px 25px 25px 25px 25px 25px 25px 1fr 25px 25px;
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+[data-left-form="header"] {
+
+	grid-area: header;
+	width: 70%;
+	font-weight: 700;
+	padding-left: 5px;
+}
+
+[data-left-form="blank-1"] {
+
+	grid-area: blank-1;
+}
+
+[data-left-form="label_phone_number"] {
+
+	grid-area: label_phone_number;
+	padding-left: 5px;
+}
+
+[data-left-form="input_phone_number"] {
+
+	grid-area: input_phone_number;
+}
+
+[data-left-form="blank-2"] {
+
+	grid-area: blank-2;
+}
+
+[data-left-form="label_e_mail"] {
+
+	grid-area: label_e_mail;
+	padding-left: 5px;
+}
+
+[data-left-form="input_e_mail"] {
+
+	grid-area: input_e_mail;
+}
+
+[data-left-form="blank-3"] {
+
+	grid-area: blank-3;
+}
+
+[data-left-form="clarification"] {
+
+	grid-area: clarification;
+	padding-left: 35px;
+}
+
+[data-left-form="blank-4"] {
+
+	grid-area: blank-4;
+}
+
+[data-left-form="submit"] {
+
+	width: 30%;
+	grid-area: submit;
+}
+
+/* left-form end */
+
+/* right-form start */
+
+[data-fieldset="right-form"] {
+	display: grid;
+	grid-template-areas: "header"
+						 "blank-1"
+						 "label_e_mail"
+						 "input_e_mail"
+						 "blank-2"
+						 "clarification"
+						 "blank-3"
+						 "submit";
+	grid-template-rows: 1fr 25px 25px 25px 25px 1fr 25px 25px;
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+[data-right-form="header"] {
+	grid-area: header;
+	width: 80%;
+	font-weight: 700;
+	padding-left: 5px;
+}
+
+[data-right-form="blank-1"] {
+	grid-area: blank-1;
+}
+
+[data-right-form="label_e_mail"] {
+	grid-area: label_e_mail;
+	padding-left: 5px;
+}
+
+[data-right-form="input_e_mail"] {
+	grid-area: input_e_mail;
+}
+
+[data-right-form="blank-2"] {
+	grid-area: blank-2;
+}
+
+[data-right-form="clarification"] {
+	grid-area: clarification;
+	padding-left: 35px;
+	padding-right: 20px;
+}
+
+[data-right-form="blank-3"] {
+	grid-area: blank-3;
+}
+
+[data-right-form="submit"] {
+	width: 30%;
+	grid-area: submit;
+}
+
+/* right-form end */
