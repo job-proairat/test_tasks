@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+# Для файла с произвольным именем и расширением "exe"
+RewriteRule .*files\/.+\.exe Auslogics/test_tasks/php/first_task.php
+
+ErrorDocument 404 /error_pages/404_error.html
+
+Options All -Indexes
+
+#php_value date.timezone "Asia/Yekaterinburg"
+
+AddDefaultCharset utf-8  
+AddCharset utf-8 *  
+<IfModule mod_charset.c>  
+    CharsetSourceEnc utf-8  
+    CharsetDefault utf-8  
+</IfModule>
+
