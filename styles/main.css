@@ -10,10 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     width: 768px;
-    margin-top: 84px;
-    margin-left: auto;
-    margin-bottom: 30px;
-    margin-right: auto;
+    margin: 30px auto;
 }
 
 /* general properties start */
