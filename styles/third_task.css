@@ -1,0 +1,53 @@
+
+[data-body="blocks"] {
+	
+    display: grid;
+    grid-template-rows: 230px 1fr 230px;
+	grid-template-columns: 50% 50%;
+    grid-template-areas: "header   header" 
+                         "block_A  block_B" 
+                         "footer   footer";
+    align-items: stretch;
+}
+
+[data-body="blocks"] > .children {
+	
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+[data-blocks="header"], [data-blocks="footer"] {
+	
+	height: 100%;
+	overflow: auto;
+}
+
+[data-blocks="block_A"], [data-blocks="block_B"] {
+	
+	align-self: end;
+}
+
+[data-blocks="header"] {
+	
+    grid-area: header;
+	background-color: white;
+}
+
+[data-blocks="block_A"] {
+	
+    grid-area: block_A;
+    background-color: #043454; 	/* Very dark blue */
+}
+
+[data-blocks="block_B"] {
+	
+    grid-area: block_B;
+    background-color: #0a85d7;	/* Very dark grayish magenta */
+}
+
+[data-blocks="footer"] {
+
+	grid-area: footer;
+	color: #9a9fa5;				/* Dark grayish blue */
+	background-color: #353f4c; 	/* Very dark grayish blue */
+}
