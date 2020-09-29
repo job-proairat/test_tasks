@@ -4,22 +4,27 @@
 	display: flex;
 }
 
-fieldset[form="left-form"], fieldset[form="right-form"] {
-	width: 320px;
-	font-size: 14px;
-	border: 1px solid #a2a2a2;
-	border-radius: 5px;
-	margin: 0;
+[data-container="left-form"], [data-container="right-form"] {
+	
+	width: 340px;
 }
 
-fieldset[form="left-form"] {
+[data-container="left-form"] {
 
 	margin-right: 20px;
 }
 
+fieldset[data-form="left-form"], fieldset[data-form="right-form"] {
+
+	font-size: 14px;
+	border: 1px solid #a2a2a2;		/* Dark gray */
+	border-radius: 5px;
+	margin: 0;
+}
+
 fieldset > legend {
 
-	color: #0a85d7;
+	color: #0a85d7;		/*  Strong blue */
 	font-weight: 700;
 }
 
@@ -37,10 +42,9 @@ fieldset > legend {
 						 "input_e_mail" 
 						 "blank-3" 
 						 "clarification" 
-						 "blank-4" 
+						 "blank-4"
 						 "submit";
 	grid-template-rows: 1fr 25px 25px 25px 25px 25px 25px 25px 1fr 25px 25px;
-	width: 100%;
 	padding-top: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -115,6 +119,7 @@ fieldset > legend {
 /* right-form start */
 
 [data-fieldset="right-form"] {
+
 	display: grid;
 	grid-template-areas: "header"
 						 "blank-1"
@@ -125,7 +130,6 @@ fieldset > legend {
 						 "blank-3"
 						 "submit";
 	grid-template-rows: 1fr 25px 25px 25px 25px 1fr 25px 25px;
-	width: 100%;
 	padding-top: 5px;
 	padding-left: 15px;
 	padding-right: 15px;

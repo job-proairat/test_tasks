@@ -1,0 +1,11 @@
+.bad {
+	
+	font-weight: 700;
+	color: #d80000;		/* Strong red */
+}
+
+.good {
+	
+	font-weight: 700;
+	color: #00b300;		/* Strong lime green */
+}
